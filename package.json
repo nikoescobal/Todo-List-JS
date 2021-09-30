@@ -1,0 +1,42 @@
+{
+  "name": "Todo-List-JS",
+  "version": "1.0.0",
+  "description": "\"Todo List\" is a simple website that displays a list of todos and allows you to add,edit and remove todos from that list.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "hint": "^6.1.4",
+    "html-webpack-plugin": "^5.3.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.7",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.2.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open",
+    "lint": "npx eslint . && npx stylelint **/*.{css,scss} && npx hint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoescobal/Todo-List-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikoescobal/Todo-List-JS/issues"
+  },
+  "homepage": "https://github.com/nikoescobal/Todo-List-JS#readme"
+}
