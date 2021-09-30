@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.todo-div {
+  box-shadow: 0 1px 8px 0;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.todo-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(139, 138, 138);
+  padding: 15px;
+}
+
+.todo-input-div {
+  display: flex;
+  align-items: center;
+}
+
+.add-todo {
+  font-style: italic;
+}
+
+.add-btn {
+  padding: 8px;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+}
+
+.todo-description {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.isChecked {
+  text-decoration: line-through;
+}
+
+.todo-input {
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.todo-input:focus {
+  outline: #fff;
+}
+
+.fas,
+.far {
+  color: grey;
+  font-size: 20px;
+}
+
+.fas,
+.far:hover {
+  cursor: pointer;
+}
+
+.inActive {
+  display: none;
+}
+
+.clear-btn {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+}
+
+.clear-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
